@@ -1,3 +1,7 @@
-# Strapi application
+# Priest Strapi
 
-A quick description of your strapi application
+Running the priest CMS on a mongo db
+
+```% yarn develop```
+
+
