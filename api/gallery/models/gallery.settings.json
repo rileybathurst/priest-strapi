@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "galleries",
   "info": {
-    "name": "Gallery"
+    "name": "Gallery",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "galleryImage": {
@@ -22,6 +24,9 @@
     },
     "alt": {
       "type": "string"
+    },
+    "order": {
+      "type": "integer"
     }
   }
 }

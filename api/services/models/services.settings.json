@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "services",
   "info": {
-    "name": "services"
+    "name": "services",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -40,17 +42,8 @@
       "plugin": "upload",
       "required": false
     },
-    "hasGallery": {
-      "type": "integer"
-    },
-    "coverMedium": {
-      "type": "string"
-    },
     "coverVideo": {
       "type": "string"
-    },
-    "hasVideo": {
-      "type": "integer"
     },
     "videos": {
       "collection": "videos",
@@ -61,6 +54,20 @@
     },
     "byline": {
       "type": "string"
+    },
+    "coverMedium": {
+      "type": "enumeration",
+      "enum": [
+        "photo",
+        "video"
+      ],
+      "default": "photo"
+    },
+    "hasGallery": {
+      "type": "boolean"
+    },
+    "hasVideo": {
+      "type": "boolean"
     }
   }
 }
